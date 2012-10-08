@@ -9,7 +9,7 @@ Contact
 We're in the process of setting up a dev blog. If you have any questions, feel free to email us at:
 
 Frank van Wattingen
-f.vanwattinge@gmail.com
+f.vanwattingen@gmail.com
 
 Tomas Reijven
-T.B.A.
+tomas.reijven@hotmail.com
