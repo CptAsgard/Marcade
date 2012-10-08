@@ -13,3 +13,7 @@ f.vanwattingen@gmail.com
 
 Tomas Reijven
 tomas.reijven@hotmail.com
+
+Released under GNU General Public License v3 (GPL-3) Open Source
+
+
