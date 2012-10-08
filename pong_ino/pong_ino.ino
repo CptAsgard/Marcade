@@ -120,7 +120,7 @@ void loop()
         }
         if (digitalRead(6))
           y_speed += 1;
-        if (digitalRead(5))
+        if (digitalRead(3))
           y_speed -= 1;
      }
       else if(ball_x > 200 && x_speed > 0){
@@ -194,7 +194,6 @@ void control()
     paddle2_y -= 2;
   if (digitalRead(3) && paddle1_y < 300)
     paddle1_y += 2;
-  
 }
 
 void reset()
