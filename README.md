@@ -1,7 +1,16 @@
 Marcade
 =======
 
-This is the official GitHub repo for the Marcade project. We're developing a retro arcade game, yet to be announced. The project will be on display at the Media College Open Dag in January.
+This is the official GitHub repo for the Marcade Pong project. We've successfully made Pong for the Gameduino. The Gameduino is mounted on a Arduino Uno. We've created a seperate controller with 4 buttons. 
+
+Controls
+=======
+
+Pin 3 - Left Paddle Up
+Pin 6 - Left Paddle Down
+
+Pin 4 - Right Paddle Down
+Pin 5 - Right Paddle Up
 
 Contact
 =======
