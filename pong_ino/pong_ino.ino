@@ -6,13 +6,13 @@
 #include <SPI.h>
 #include <GD.h>
 #include "graphics.h"
-//#include "Vector.h"
+#include "bg.h"
 
 /*Define de BALL en PADDLE, voor easy access en 
   overzichtelijke beschrijving in de code naar de sprites in de spritesheet */
 #define BALL   0
 #define PADDLE 1
-#define ZERO   7
+#define ZERO   1
 
 int ball_x, ball_y;
 
@@ -54,9 +54,9 @@ void setup()
   int y = rand() % 2;
   
   if (x)
-    x_speed = 1;
+    x_speed = 10;
   else
-    x_speed = -1;
+    x_speed = -10;
   
    if (y)
     y_speed = 1;
@@ -77,6 +77,9 @@ void setup()
 
   GD.copy(RAM_SPRPAL, graphics_sprpal, sizeof(graphics_sprpal));
   GD.copy(RAM_SPRIMG, graphics_sprimg, sizeof(graphics_sprimg));
+  
+  GD.copy(RAM_CHR, bg_chr, sizeof(bg_chr));
+  GD.copy(RAM_PAL, bg_pal, sizeof(bg_pal));
     
   GD.__end();
 }
@@ -138,8 +141,8 @@ void loop()
     }
     
     //Draw score
-    draw_score(atxy(3, 5), score1);
-    draw_score(atxy(11, 5), score2);
+    draw_score(atxy(20, 3), score1);
+    draw_score(atxy(28, 3), score2);
     
     
     update();
@@ -206,9 +209,9 @@ void reset()
   int y = rand() % 2;
   
   if (x)
-    x_speed = 1;
+    x_speed = 10;
   else
-    x_speed = -1;
+    x_speed = -10;
   
    if (y)
     y_speed = 1;
