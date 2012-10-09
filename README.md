@@ -7,9 +7,12 @@ Controls
 =======
 
 Pin 3 - Left Paddle Up
+
 Pin 6 - Left Paddle Down
 
+
 Pin 4 - Right Paddle Down
+
 Pin 5 - Right Paddle Up
 
 Contact
